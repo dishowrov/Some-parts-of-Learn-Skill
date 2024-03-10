@@ -1,0 +1,179 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.dis-hero-sec-course {
+  max-width: 323px;
+  position: relative;
+  background-color: #FFF;
+  margin: 100px auto;
+}
+.dis-hero-sec-course a {
+  text-decoration: none;
+}
+.dis-hero-sec-course img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.dis-hero-sec-course .dis-hero-course-contents {
+  padding: 30px 20px 20px;
+  position: relative;
+  z-index: 1;
+}
+.dis-hero-sec-course .dis-hero-course-contents::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  border-top: 40px solid #FFF;
+  border-left: 320px solid transparent;
+  width: 100%;
+  top: 99%;
+  left: 0;
+}
+.dis-hero-sec-course .dis-hero-course-contents h6.course-category {
+  background-color: #0071dc;
+  padding: 5px 20px;
+  display: inline-block;
+  color: #ffffff;
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 5px;
+}
+.dis-hero-sec-course .dis-hero-course-contents h5.course-published-date {
+  color: #767575;
+  margin: 11px 0;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+.dis-hero-sec-course .dis-hero-course-contents h2.course-card-title {
+  font-family: "Jost", Sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #161616;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 67px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+.dis-hero-sec-course .dis-hero-course-contents p.course-card-excerpt {
+  color: #6b6b6b;
+  margin: 11px 0;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 41px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.dis-instructor-info {
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  background-color: #d05454;
+  margin: 9px;
+  padding: 20px 10px;
+  border-radius: 0 0 15px 15px;
+}
+.dis-instructor-info::before {
+  content: "";
+  height: 1025px;
+  width: 1025px;
+  background-color: #0071dc;
+  border-radius: 50%;
+  position: absolute;
+  top: 70%;
+  left: 75%;
+  z-index: -1;
+  transition: all 0.4s cubic-bezier(0.3, 0.02, 0, 0.6);
+}
+.dis-instructor-info:hover::before {
+  top: -75%;
+  left: -45%;
+}
+.dis-instructor-info:hover h3 a {
+  color: #FFF;
+}
+.dis-instructor-info:hover h3 a:hover {
+  color: #aeaeae;
+}
+.dis-instructor-info:hover h6 {
+  color: #FFF;
+}
+.dis-instructor-info:hover p.dis-instructor-socials i {
+  color: #FFF;
+}
+.dis-instructor-info:hover p.dis-instructor-socials i:hover {
+  color: #aeaeae;
+}
+.dis-instructor-info a {
+  text-decoration: none;
+}
+.dis-instructor-info h3 {
+  margin: 0;
+}
+.dis-instructor-info h3 a {
+  font-family: "Jost", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0;
+  color: #161616;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+.dis-instructor-info h6 {
+  margin: 0 0 5px 0;
+  font-family: "Jost", Sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #585858;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+.dis-instructor-info p.dis-instructor-socials {
+  margin-top: 15px;
+}
+.dis-instructor-info p.dis-instructor-socials i {
+  margin-left: 11px;
+  color: #aeaeae;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+
+.dis-big-instructor-info {
+  text-align: right;
+  border-radius: 0 0 45px 0 !important;
+  -webkit-border-radius: 0 0 45px 0 !important;
+  -moz-border-radius: 0 0 45px 0 !important;
+  -ms-border-radius: 0 0 45px 0 !important;
+  -o-border-radius: 0 0 45px 0 !important;
+}/*# sourceMappingURL=style.css.map */

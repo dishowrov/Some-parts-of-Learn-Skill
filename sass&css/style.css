@@ -181,6 +181,12 @@
   -o-border-radius: 0 0 45px 0 !important;
 }
 
+.dis-all-course-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3px;
+}
+
 .dis-course-card {
   max-width: 375px;
   padding: 15px;
@@ -188,13 +194,12 @@
   box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.08);
   background-color: #FFF;
   border-radius: 4px;
+  min-height: 458px;
   position: relative;
 }
-.dis-course-card:hover {
-  overflow: hidden;
-}
 .dis-course-card:hover .dis-course-card-hover-contents {
-  height: 100%;
+  height: calc(100% + 21px);
+  height: 0;
 }
 .dis-course-card .dis-course-card-normal-contents img {
   margin-top: -35px;
@@ -295,9 +300,12 @@
   font-size: 20px;
   font-family: "Jost", sans-serif;
   font-weight: 600;
+  padding: 0;
+  margin: 0;
 }
 .dis-course-card .dis-course-card-normal-contents .dis-course-card-footer ul.dis-course-ratings {
   padding: 0;
+  margin: 0;
 }
 .dis-course-card .dis-course-card-normal-contents .dis-course-card-footer ul.dis-course-ratings li {
   padding: 0;
@@ -320,7 +328,7 @@
   overflow: hidden;
   background-color: #0071DC;
   position: absolute;
-  top: 0;
+  top: -21px;
   left: 0;
   width: auto;
   height: 0%;
@@ -329,6 +337,11 @@
   -moz-transition: height linear 0.3s;
   -ms-transition: height linear 0.3s;
   -o-transition: height linear 0.3s;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
 }
 .dis-course-card .dis-course-card-hover-contents .dis-course-card-hover-contents-inner {
   padding: 15px;
@@ -475,7 +488,7 @@
   font-family: "Roboto", sans-serif;
   color: #ffffff;
   font-size: 15px;
-  margin: 17px 35px 17px 0;
+  margin: 5px 35px 11px 0;
   line-height: 30px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -489,7 +502,7 @@
 .dis-course-card .dis-course-card-hover-contents .dis-course-card-hover-contents-inner ul.dis-course-features li {
   display: inline-block;
   list-style-type: none;
-  margin-right: 30px;
+  margin: 0 30px 3px 0;
   font-size: 15px;
   color: #FFF;
   padding: 0;
@@ -531,7 +544,7 @@
   font-weight: 600;
 }
 
-.dis-course-all-course-box {
+.dis-course-all-course-card {
   box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.08);
   min-height: 490px;
   padding: 38px;
@@ -546,14 +559,14 @@
   border-style: dashed;
   border-color: #c1c1c1;
 }
-.dis-course-all-course-box h2 {
+.dis-course-all-course-card h2 {
   color: #161616;
   font-family: "Jost", Sans-serif;
   font-size: 30px;
   font-weight: 500;
   margin-bottom: 30px;
 }
-.dis-course-all-course-box a {
+.dis-course-all-course-card a {
   font-family: "Jost", Sans-serif;
   color: #ffffff;
   padding: 12px 30px;
@@ -572,7 +585,7 @@
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
 }
-.dis-course-all-course-box a:hover {
+.dis-course-all-course-card a:hover {
   color: #0071DC;
   background-color: transparent;
 }/*# sourceMappingURL=style.css.map */

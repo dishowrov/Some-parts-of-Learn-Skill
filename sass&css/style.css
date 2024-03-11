@@ -184,7 +184,7 @@
 .dis-all-course-card {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 3px;
+  gap: 15px;
 }
 
 .dis-course-card {
@@ -194,16 +194,19 @@
   box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.08);
   background-color: #FFF;
   border-radius: 4px;
-  min-height: 458px;
+  min-height: 457px;
   position: relative;
 }
 .dis-course-card:hover .dis-course-card-hover-contents {
   height: calc(100% + 21px);
-  height: 0;
 }
 .dis-course-card .dis-course-card-normal-contents img {
   margin-top: -35px;
   width: 100%;
+  max-height: 295px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 10px 10px 0 0;
   -webkit-border-radius: 10px 10px 0 0;
   -moz-border-radius: 10px 10px 0 0;
@@ -330,6 +333,7 @@
   position: absolute;
   top: -21px;
   left: 0;
+  z-index: 5;
   width: auto;
   height: 0%;
   transition: height linear 0.3s;
@@ -542,13 +546,16 @@
   font-size: 20px;
   font-family: "Jost", sans-serif;
   font-weight: 600;
+  padding: 0;
+  margin: 0;
 }
 
 .dis-course-all-course-card {
   box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.08);
-  min-height: 490px;
+  min-height: 325px;
+  max-height: 425px;
   padding: 38px;
-  margin-top: 0;
+  margin-top: 20px;
   height: calc(100% - 30px);
   display: flex;
   flex-direction: column;

@@ -654,3 +654,52 @@
     // }
 
 }
+
+.dis-course-all-course-box {
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.08);
+    min-height: 490px;
+    padding: 38px;
+    margin-top: 0;
+    height: calc(100% - 30px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background-color: #ffffff;
+    border-width: 2px;
+    border-style: dashed;
+    border-color: #c1c1c1;
+
+    h2 {
+        color: #161616;
+        font-family: "Jost", Sans-serif;
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 30px;
+    }
+
+    a {
+        font-family: "Jost", Sans-serif;
+        color: #ffffff;
+        padding: 12px 30px;
+        font-size: 16px;
+        font-weight: 500;
+        text-decoration: none;
+        background-color: #0071DC;
+        border: 1px solid #0071DC;
+        transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+
+        &:hover {
+            color: #0071DC;
+            background-color: transparent;
+        }
+    }
+}
